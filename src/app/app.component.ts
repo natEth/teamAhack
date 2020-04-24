@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var Tesseract;
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'A team  Hackathon Project';
+  Result = 'Recognizing...';
+  constructor() {    
+     this. test();     
+  }
+  test(){
+    Tesseract.recognize('assets/Images/TestDemo.png').then(function(result){         
+      alert(result.text);      
+      });    
+  }
 }
