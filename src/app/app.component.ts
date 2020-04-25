@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'A team  Hackathon Project';
   Result = 'Recognizing...';
   constructor() {    
-     this. test();     
+    //  this. test();     
   }
   test(){
     Tesseract.recognize('assets/Images/TestDemo.png').then(function(result){         
