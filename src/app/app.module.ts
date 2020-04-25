@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { BasicFormComponent } from './basic-form/basic-form.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MainFormComponent } from './main-form/main-form.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicFormComponent
+    BasicFormComponent,
+    MainFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
